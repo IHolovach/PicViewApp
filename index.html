@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<title>App in AngularJS</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    	<script src="js/allPhotos.js"></script>
+	</head>
+	<body ng-app="picViewApp">
+		<div ng-controller="allPhotos">
+			<ul>
+				<li ng-repeat="photo in photos">
+					<img ng-src="{{photo.thumbnailUrl}}">
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
