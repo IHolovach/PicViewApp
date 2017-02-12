@@ -1,0 +1,39 @@
+$appFont: 'Roboto', sans-serif
+$textColor: rgba(31, 138, 255, 0.5)
+$sideSquareSize: 150px
+$borderValue: 1px solid black
+a
+  text-decoration: none
+  &:visited, &:active
+    color: $textColor
+
+h1
+  font-family: $appFont
+  font-size: 1.2em
+  color: $textColor
+  text-align: center
+
+p.amount
+  font-size: 0.8em
+  text-align: center
+  margin: 0
+  padding-bottom: 5%
+
+ul
+  display: inline-block
+  list-style-type: none
+  padding: 0
+  margin: 0
+  text-align: center
+
+li
+  display: inline-block
+  list-style: none
+  padding: 0
+  margin: 2px
+  border-top: $borderValue
+  img
+    height: $sideSquareSize
+    width: $sideSquareSize
+    &:hover
+      cursor: pointer
